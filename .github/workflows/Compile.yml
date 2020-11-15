@@ -43,7 +43,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: SetPath
-      run: cd Codigos/C_C++ & ls
+      run: cd Codigos/C_C++
+    - name: Check
+      run: ls
     - name: make
       run: make
     - name: make check
