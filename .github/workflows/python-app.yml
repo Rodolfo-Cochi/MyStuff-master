@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  Pythonbuild: 
 
     runs-on: ubuntu-latest
 
@@ -34,3 +34,17 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+
+
+  C-CPPbuild:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
