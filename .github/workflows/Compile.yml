@@ -48,7 +48,7 @@ jobs:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
     - name: Slack Notification Fail
       uses: rtCamp/action-slack-notify@v2      
-      if: failed()
+      if: failure()
       env:
         SLACK_CHANNEL: testing-for-gmt
         SLACK_COLOR: '#FF0000'
