@@ -49,7 +49,7 @@ jobs:
       if: failed()
       env:
         SLACK_CHANNEL: testing-for-gmt
-        SLACK_COLOR: #FF0000
+        SLACK_COLOR: '#FF0000'
         SLACK_ICON: https://github.com/rtCamp.png?size=45
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           
