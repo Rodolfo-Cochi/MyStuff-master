@@ -41,7 +41,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: code-coverage-report
-        path: output/test/Code
+        path: output/test/Code.txt
     - name: Slack Notification Success
       if: success()
       uses: rtCamp/action-slack-notify@v2
