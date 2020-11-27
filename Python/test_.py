@@ -1,5 +1,5 @@
 # content of test_sample.py
-de inc(x):
+def inc(x):
     return x + 1
 
 
